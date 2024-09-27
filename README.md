@@ -59,7 +59,7 @@ Then I compare the performance gain against serial with parallel and plot the gr
 Steps: 
 1. Install HiSpy Library Using Command pip install highspy 
 2. Use Python code to verify  (It load the linear programming problem from the MPS file then solve the problem using the HiGHS solver)
-3. Comparing the solution provided by the HiGHS solver with the results from the C++ code
+3. Comparing the solution provided by the HiGHS solver with the results from the C++ code <br/>
 **Except for HiGHS, can use COPT, CYLP, CPLEX and so on**
 
 ![image](https://github.com/user-attachments/assets/5c9f6b49-e002-4d6a-a095-df5cc6799d1e)
