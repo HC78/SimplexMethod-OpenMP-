@@ -32,14 +32,16 @@ Raw Material B: Each unit of Product 1, Product 2, and Product 3 requires differ
 &#8594; constraint is 2x<sub>1</sub>+ 1x<sub>2</sub> + 2x<sub>3​</sub>≤240
 <br/>
 <i>How is the Simplex Method work?</i> <br/>
-- Select Pivot Column: Choose the column with the most negative coefficient in the objective row.
-- Select Pivot Row: Choose the row with the minimum ratio of the right-hand side value to the pivot column value.
-- Pivoting: Perform row operations to make the pivot element 1 and other pivot column row be 0.
-- Iteration: Repeat until no negative coefficients remain in the objective row (optimal solution). 
-![image](https://github.com/user-attachments/assets/00d1ca2d-e866-4444-8eaf-3b1f445d4163)
-![image](https://github.com/user-attachments/assets/067593c5-37bd-4c9c-8240-abc699439a6f)
+-- Select Pivot Column: Choose the column with the most negative coefficient in the objective row.<br/>
+-- Select Pivot Row: Choose the row with the minimum ratio of the right-hand side value to the pivot column value.<br/>
+-- Pivoting: Perform row operations to make the pivot element 1 and other pivot column row be 0.<br/>
+-- Iteration: Repeat until no negative coefficients remain in the objective row (optimal solution). <br/>
 
-<br/>This is a small real life problem with 3 variabes and 3 constraints, the solution would be quickly figuring out. Now it come to a problem, the execution time would be slower and slower when there is a increasing number of variables and constraints. <br/>
+![image](https://github.com/user-attachments/assets/d4bd9650-0aef-419c-8fb2-f3f4f31b6092) <br/><br/>
+![image](https://github.com/user-attachments/assets/747a4b9d-9bc2-4457-a7ff-4ee8c504a783) <br/><br/>
+![image](https://github.com/user-attachments/assets/08b79b3b-5096-496a-a51e-5f3db296142f)
+
+This is a small real life problem with 3 variabes and 3 constraints, the solution would be quickly figuring out. Now it come to a problem, the execution time would be slower and slower when there is a increasing number of variables and constraints. <br/>
 <br/>
 <b>Parallel Computing (OpenMP)</b> <br/>
 In this project, I want to parallise the simplex method process using OpenMP. The part that I parallelise is pivot column selection, pivot row selection and pivoting. <br/>
@@ -53,11 +55,11 @@ Then I compare the performance gain against serial with parallel and plot the gr
 ![image](https://github.com/user-attachments/assets/ce80ff2c-eb73-4294-be45-e5a707b0dc81)
 ![image](https://github.com/user-attachments/assets/016674cc-2f20-43d3-bb4c-af704b867590)
 
-![image](https://github.com/user-attachments/assets/747a4b9d-9bc2-4457-a7ff-4ee8c504a783)
-![image](https://github.com/user-attachments/assets/08b79b3b-5096-496a-a51e-5f3db296142f)
-![image](https://github.com/user-attachments/assets/d4bd9650-0aef-419c-8fb2-f3f4f31b6092)
-
 <b>Verification</b>
+
+
+
+
 <br/>when run in serial, well known  solver cant but my result can produce faster bcs run in parallel->contribution in this project, run in parallel perforamcne can upperformance, 
 how to product MPS file so that can 
 can show code, put link to notebook(ex: colab-> remote pc where can test), provide guidance, can run in colab, no need install anything, any notebook+show how run program for cplex, highspy, can go in find anymore, (try ....),
