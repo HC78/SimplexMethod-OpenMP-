@@ -36,7 +36,8 @@ Raw Material B: Each unit of Product 1, Product 2, and Product 3 requires differ
 - Select Pivot Row: Choose the row with the minimum ratio of the right-hand side value to the pivot column value.
 - Pivoting: Perform row operations to make the pivot element 1 and other pivot column row be 0.
 - Iteration: Repeat until no negative coefficients remain in the objective row (optimal solution). <br/>
-![image](https://github.com/user-attachments/assets/d67abe87-cb95-42e9-86dd-64a429b2a1da) <br/>
+![image](https://github.com/user-attachments/assets/6805d081-69de-4f5b-9e90-ac47f1ba5e3c)
+<br/>
 Diagram 2: Add slack variables to convert inequalities into equalities.<br/>
 
 <br/>This is a small real life problem with 3 variabes and 3 constraints, the solution would be quickly figuring out. Now it come to a problem, the execution time would be slower and slower when there is a increasing number of variables and constraints. <br/>
