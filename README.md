@@ -1,4 +1,4 @@
-<b>Introduction</b> <br/>
+![image](https://github.com/user-attachments/assets/49bb1287-030a-422f-b66d-2617019bf2de)![image](https://github.com/user-attachments/assets/c1f3497c-1801-4ce8-bbf1-c4262bec960d)<b>Introduction</b> <br/>
 Linear Programming optimizes an objective such as maximise profit or mininise cost under the constraints taken from linear equations or inequalities.<br/>
 Simplex Method is an iterative algorithm that moves along the edges of the feasible region to find the optimal solution.<br/>
 It efficiently starts from a corner point, improving the objective function at each step until reaching the maximum or minimum value.<br/>
@@ -36,18 +36,22 @@ Raw Material B: Each unit of Product 1, Product 2, and Product 3 requires differ
 - Select Pivot Row: Choose the row with the minimum ratio of the right-hand side value to the pivot column value.
 - Pivoting: Perform row operations to make the pivot element 1 and other pivot column row be 0.
 - Iteration: Repeat until no negative coefficients remain in the objective row (optimal solution). <br/>
-![image](https://github.com/user-attachments/assets/eb311eb6-694d-4c3d-843f-4a3038eb5125)
-![image](https://github.com/user-attachments/assets/e964cf1f-6c61-463f-8d7a-12afd895800e)
-![image](https://github.com/user-attachments/assets/dc80aae2-91d2-4e06-b744-27d298d6ea2e)
-![image](https://github.com/user-attachments/assets/0bd520f8-dd57-416c-9a15-07d2ee9ba08b)
+![image](https://github.com/user-attachments/assets/00d1ca2d-e866-4444-8eaf-3b1f445d4163)
+![image](https://github.com/user-attachments/assets/067593c5-37bd-4c9c-8240-abc699439a6f)
 
 <br/>This is a small real life problem with 3 variabes and 3 constraints, the solution would be quickly figuring out. Now it come to a problem, the execution time would be slower and slower when there is a increasing number of variables and constraints. <br/>
 <br/>
 <b>Parallel Computing (OpenMP)</b> <br/>
 In this project, I want to parallise the simplex method process using OpenMP. The part that I parallelise is pivot column selection, pivot row selection and pivoting. <br/>
 Then I compare the performance gain against serial with parallel and plot the graphs below. 
-
-
+![image](https://github.com/user-attachments/assets/54b10d5c-af30-4eb6-8bff-a89b2bbcb88b)
+![image](https://github.com/user-attachments/assets/878b7c72-e995-432b-8c2a-771957bf2988)
+![image](https://github.com/user-attachments/assets/8104e6d6-7642-4646-9da6-7540f39b9178)
+![image](https://github.com/user-attachments/assets/6350f0d8-eb20-4159-b029-49bdca0cab57)
+![image](https://github.com/user-attachments/assets/73a38874-e00d-4564-8ee5-05685898800f)
+![image](https://github.com/user-attachments/assets/d33e51aa-c29b-482c-bd41-53a3761c58e4)
+![image](https://github.com/user-attachments/assets/ce80ff2c-eb73-4294-be45-e5a707b0dc81)
+![image](https://github.com/user-attachments/assets/016674cc-2f20-43d3-bb4c-af704b867590)
 
 <b>Verification</b>
 <br/>when run in serial, well known  solver cant but my result can produce faster bcs run in parallel->contribution in this project, run in parallel perforamcne can upperformance, 
