@@ -12,7 +12,7 @@ The objective is to maximise profit by determining how many units of each produc
 * Profit from Product 3 = $4 per unit <br/>
 &#8594; objective function (profit) is Z=6x<sub>1</sub>+5x<sub>2</sub>+4x<sub>3​</sub><br/>
 
-<ins>Constraints:<ins><br/>
+<ins>Constraints:</ins><br/>
 Raw Material A: Each unit of Product 1, Product 2 and Product 3 requires different amounts of Material A. The factory has only 180 units of Material A available. <br/>
 * Each unit of Product 1 requires 2 units of Material A.
 * Each unit of Product 2 requires 1 unit of Material A.
