@@ -1,4 +1,4 @@
-<b>Introduction</b> <br/>
+![image](https://github.com/user-attachments/assets/2923423d-609c-4157-9f08-722137d13330)<b>Introduction</b> <br/>
 Linear Programming optimizes an objective such as maximise profit or mininise cost under the constraints taken from linear equations or inequalities.<br/>
 Simplex Method is an iterative algorithm that moves along the edges of the feasible region to find the optimal solution.<br/>
 It efficiently starts from a corner point, improving the objective function at each step until reaching the maximum or minimum value.<br/>
@@ -56,9 +56,16 @@ Then I compare the performance gain against serial with parallel and plot the gr
 ![image](https://github.com/user-attachments/assets/016674cc-2f20-43d3-bb4c-af704b867590)
 
 <b>Verification</b>
+Steps: 
+1. Install HiSpy Library Using Command pip install highspy 
+2. Use Python code to verify  (It load the linear programming problem from the MPS file then solve the problem using the HiGHS solver)
+3. Comparing the solution provided by the HiGHS solver with the results from the C++ code
+**Except for HiGHS, can use COPT, CYLP, CPLEX and so on**
 
-
-
+![image](https://github.com/user-attachments/assets/5c9f6b49-e002-4d6a-a095-df5cc6799d1e)
+![image](https://github.com/user-attachments/assets/ef2fc301-1462-4a17-ad68-97a3ac8fc361)
+![image](https://github.com/user-attachments/assets/8817d8bc-e288-47f1-a370-097cb3e22282)
+![image](https://github.com/user-attachments/assets/6129a210-f60b-435b-b697-4cae4dc39169)
 
 <br/>when run in serial, well known  solver cant but my result can produce faster bcs run in parallel->contribution in this project, run in parallel perforamcne can upperformance, 
 how to product MPS file so that can 
