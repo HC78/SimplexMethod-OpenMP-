@@ -36,7 +36,11 @@ Raw Material B: Each unit of Product 1, Product 2, and Product 3 requires differ
 - Select Pivot Row: Choose the row with the minimum ratio of the right-hand side value to the pivot column value.
 - Pivoting: Perform row operations to make the pivot element 1 and other pivot column row be 0.
 - Iteration: Repeat until no negative coefficients remain in the objective row (optimal solution). <br/>
-![image](https://github.com/user-attachments/assets/0ff2cf19-af87-4638-b0c6-6b8054c8ee8a)
+![image](https://github.com/user-attachments/assets/eb311eb6-694d-4c3d-843f-4a3038eb5125)
+![image](https://github.com/user-attachments/assets/e964cf1f-6c61-463f-8d7a-12afd895800e)
+![image](https://github.com/user-attachments/assets/dc80aae2-91d2-4e06-b744-27d298d6ea2e)
+![image](https://github.com/user-attachments/assets/0bd520f8-dd57-416c-9a15-07d2ee9ba08b)
+
 <br/>Diagram 2: Add slack variables to convert inequalities into equalities.<br/>
 ![image](https://github.com/user-attachments/assets/4888d5b5-4519-471a-9c9e-fb0c890e7525)
 <br/>Diagram 3: Make pivot element to become 1 and others be 0<br/>
