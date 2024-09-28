@@ -55,17 +55,26 @@ Then I compare the performance gain against serial with parallel and plot the gr
 ![image](https://github.com/user-attachments/assets/ce80ff2c-eb73-4294-be45-e5a707b0dc81)
 ![image](https://github.com/user-attachments/assets/016674cc-2f20-43d3-bb4c-af704b867590)
 
-<b>Verification</b>
+<b>Verification</b> <br/>
 Steps: 
 1. Install HiSpy Library Using Command pip install highspy 
 2. Use Python code to verify  (It load the linear programming problem from the MPS file then solve the problem using the HiGHS solver)
 3. Comparing the solution provided by the HiGHS solver with the results from the C++ code <br/>
-**Except for HiGHS, can use COPT, CYLP, CPLEX and so on**
+***Except for HiGHS, can use COPT, CYLP, CPLEX and so on** <br/>
 
 ![image](https://github.com/user-attachments/assets/5c9f6b49-e002-4d6a-a095-df5cc6799d1e)
 ![image](https://github.com/user-attachments/assets/ef2fc301-1462-4a17-ad68-97a3ac8fc361)
 ![image](https://github.com/user-attachments/assets/8817d8bc-e288-47f1-a370-097cb3e22282)
 ![image](https://github.com/user-attachments/assets/6129a210-f60b-435b-b697-4cae4dc39169)
+
+This is to make sure the random generated constraints will not lead to 2 cases : <br/>
+- There are two or more constraints are parallel which does not have a clear intersection point that lead to no maximum result. <br/>
+
+![image](https://github.com/user-attachments/assets/e91c0259-5219-42de-bd5f-8666f8bdc3be) 
+
+- The constraints has no overlapping region that satisfies all the inequalities which does not have feasible solution.<br/>
+
+![image](https://github.com/user-attachments/assets/0ba13ad4-595d-42ca-99b0-f27cdd3f55ce)
 
 Note: The code can run in any notebook such as colab without needed to install anything on your laptop or computer. <br/>
 20000*20000 or more verification couldn't verify using the MPS file because it needs more powerful distributed computing. <br/>
