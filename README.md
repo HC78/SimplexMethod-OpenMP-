@@ -53,7 +53,12 @@ Then I compare the performance gain against serial with parallel and plot the gr
 ![image](https://github.com/user-attachments/assets/73a38874-e00d-4564-8ee5-05685898800f)
 ![image](https://github.com/user-attachments/assets/d33e51aa-c29b-482c-bd41-53a3761c58e4)
 ![image](https://github.com/user-attachments/assets/ce80ff2c-eb73-4294-be45-e5a707b0dc81)
+
+From figure 3.1 to figure 3.7, it shows that 16 threads is the appropriate number of threads for handling smaller data, the arrays of size up to 10000 x 10000. It is due to the overhead by creating and managing a larger number of threads. When the dataset is small, this overhead outweighs the benefits gained from parallelism because each thread ends up with very little work to handle or process. Hence, using too many threads can degrade performance rather than improve it. However for large problems it shows it gains more performance gain using 32 threads. The workload is big enough without being slowed down by the overhead of managing too many threads. Therefore, parallel computing handles the work more efficiently and leads to better performance as the number of threads increases.
+
 ![image](https://github.com/user-attachments/assets/016674cc-2f20-43d3-bb4c-af704b867590)
+
+From figure 3.8, it shows that parallel computing becomes dominant at more than 20000*20000 size of data.  
 
 <b>Verification</b> <br/>
 Steps: 
@@ -65,7 +70,6 @@ Steps:
 ![image](https://github.com/user-attachments/assets/5c9f6b49-e002-4d6a-a095-df5cc6799d1e)
 ![image](https://github.com/user-attachments/assets/ef2fc301-1462-4a17-ad68-97a3ac8fc361)
 ![image](https://github.com/user-attachments/assets/8817d8bc-e288-47f1-a370-097cb3e22282)
-![image](https://github.com/user-attachments/assets/6129a210-f60b-435b-b697-4cae4dc39169)
 
 This is to make sure the random generated constraints will not lead to 2 cases : <br/>
 - There are two or more constraints are parallel which does not have a clear intersection point that lead to no maximum result. <br/>
@@ -75,6 +79,8 @@ This is to make sure the random generated constraints will not lead to 2 cases :
 - The constraints has no overlapping region that satisfies all the inequalities which does not have feasible solution.<br/>
 
 ![image](https://github.com/user-attachments/assets/0ba13ad4-595d-42ca-99b0-f27cdd3f55ce)
+
+<br/>For the contribution in this project, when applied OMP parallel, my coding can produce result faster than the well known solver, run in parallel computing can have performance with appropriate number of threads, variables and constraints.
 
 Note: The code can run in any notebook such as colab without needed to install anything on your laptop or computer. <br/>
 20000*20000 or more verification couldn't verify using the MPS file because it needs more powerful distributed computing. <br/>
