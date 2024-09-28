@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2923423d-609c-4157-9f08-722137d13330)<b>Introduction</b> <br/>
+<b>Introduction</b> <br/>
 Linear Programming optimizes an objective such as maximise profit or mininise cost under the constraints taken from linear equations or inequalities.<br/>
 Simplex Method is an iterative algorithm that moves along the edges of the feasible region to find the optimal solution.<br/>
 It efficiently starts from a corner point, improving the objective function at each step until reaching the maximum or minimum value.<br/>
@@ -67,10 +67,11 @@ Steps:
 ![image](https://github.com/user-attachments/assets/8817d8bc-e288-47f1-a370-097cb3e22282)
 ![image](https://github.com/user-attachments/assets/6129a210-f60b-435b-b697-4cae4dc39169)
 
-<br/>when run in serial, well known  solver cant but my result can produce faster bcs run in parallel->contribution in this project, run in parallel perforamcne can upperformance, 
-how to product MPS file so that can 
-can show code, put link to notebook(ex: colab-> remote pc where can test), provide guidance, can run in colab, no need install anything, any notebook+show how run program for cplex, highspy, can go in find anymore, (try ....),
-performance of single thread, if run multiple thread can see performance gain
+Note: The code can run in any notebook such as colab without needed to install anything on your laptop or computer. <br/>
+20000*20000 or more verification couldn't verify using the MPS file because it needs more powerful distributed computing. <br/>
+There is performance gain when run multiple thread.
+
+
 
 
 
