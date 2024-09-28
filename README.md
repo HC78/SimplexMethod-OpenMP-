@@ -85,7 +85,7 @@ This is to make sure the random generated constraints will not lead to 2 cases :
 Note: The code can run in any notebook such as colab without needed to install anything on your laptop or computer. <br/>
 20000*20000 or more verification couldn't verify using the MPS file because it needs more powerful distributed computing. <br/>
 There is performance gain when run multiple thread.
-
+The simplex method code is using c++ languages.
 
 
 
